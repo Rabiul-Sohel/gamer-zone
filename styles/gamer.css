@@ -25,6 +25,7 @@ img {
   --wh-color: #fff;
   --fw-xl: 700;
   --fw-mdm: 600;
+  --fw-sm:400;
   --fs-xl: 48px;
   --fs-mdm: 20px;
   --fs-sm: 18px;
@@ -34,7 +35,19 @@ img {
 .title-bk-text {
   color: var(--bk-color);
   font-size: var(--fs-xl);
-  font-weight: var(--fw-mdm);
+  font-weight: var(--fw-xl);
+}
+.title-gradient-text{
+  background-image: var(--text-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: var(--fw-xl);
+}
+.description-text{
+  color: var(--primary-color);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-sm);
+  margin-bottom: 20px;
 }
 .btn-primary{
   background-image: var(--pink-gradient);
@@ -47,6 +60,10 @@ img {
   margin-top: 20px;
   cursor: pointer;
   text-transform: uppercase;
+}
+main{
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 /* Common styles ends here*/
@@ -187,3 +204,92 @@ img {
 }
 
 /* header area style ends */
+
+
+/* Online games area style */
+.online-games-area{
+  max-width: 1200px;
+  margin: 50px auto 0;
+  text-align: center;
+}
+.card-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.card-container .card{
+ width: 25%;
+ text-align: left;
+}
+.card-container .card p{
+ color: var(--primary-color);
+ font-size: var(--fs-mdm);
+ margin-top: 10px;
+}
+
+
+/* play instantly area style */
+.play-instantly-container{
+  display: flex;
+  justify-content: space-between;
+  gap: 200px;
+  margin-top: 50px;
+}
+.instantly-text-container{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+}
+.play-instantly-text{
+  max-width: 400px;
+  text-align: right;
+}
+.play-instantly-image{
+  width: 50%;
+  /* position: relative; */
+}
+.child-image{
+  position: relative;
+  width: 45%;
+  top: -200px;
+  left: -100px;
+  border: ;
+}
+
+
+/* type button area style */
+.game-typ-container{
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+.type-button-container{
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  align-items: center;
+}
+.type-button-container .button-image{
+  width: 50px;
+}
+.one{
+  grid-column: 1/2;
+}
+.two{
+  grid-column: 4/5;
+}
+.three{
+  grid-column: 7/8;
+}
+.four{
+  grid-column: 10/11;
+}
+.five{
+  grid-column: 13/14;
+}
+.six{
+  grid-column: 3/4 ;
+} 
+.seven{grid-column: ;}
+.eight
+.nine
