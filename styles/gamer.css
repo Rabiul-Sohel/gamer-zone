@@ -61,10 +61,7 @@ img {
   cursor: pointer;
   text-transform: uppercase;
 }
-main{
-  max-width: 1200px;
-  margin: 0 auto;
-}
+
 
 /* Common styles ends here*/
 
@@ -230,10 +227,12 @@ main{
 
 /* play instantly area style */
 .play-instantly-container{
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   gap: 200px;
-  margin-top: 50px;
+  margin: 50px auto 0;
+  
 }
 .instantly-text-container{
   display: flex;
@@ -247,49 +246,87 @@ main{
 }
 .play-instantly-image{
   width: 50%;
-  /* position: relative; */
+  position: relative;
+  padding-bottom: 100px;
 }
 .child-image{
-  position: relative;
+  position: absolute;
   width: 45%;
-  top: -200px;
+  bottom: 30px;
   left: -100px;
-  border: ;
 }
 
 
 /* type button area style */
-.game-typ-container{
+.game-type-area{
+  background-image: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  padding: 50px;
+}
+.game-type-container{
+  max-width: 1200px;
+  margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  /* gap: 10px; */
+  justify-content: space-between;
+  grid-template-columns: repeat(14, 1fr);
+  grid-template-rows: repeat(2, ifs);
+}
+.one{
+  grid-column: 1/4;
+  grid-row: 1/2;
+}
+.two{
+  grid-column: 5/8;
+  grid-row: 1/2;
+}
+.three{
+  grid-column: 9/12;
+  grid-row: 1/2;
+}
+.four{
+  grid-column: 13/16;
+  grid-row: 1/2;
+}
+.five{
+  grid-column: 17/20;
+  grid-row: 1/2;
+}
+.six{
+  grid-column: 2/6;
+  grid-row: 2/3
+} 
+.seven{
+  grid-column: 7/10;
+  grid-row: 2/3
+}
+.eight{
+  grid-column: 11/14;
+  grid-row: 2/3
+}
+.nine{
+  grid-column: 15/18;
+  grid-row: 2/3
 }
 .type-button-container{
   display: flex;
-  justify-content: center;
+  justify-content: start;
   gap: 5px;
   align-items: center;
+  padding: 10px;
+  border-radius: 80px;
+  border: 2px solid transparent;
+}
+.type-button-container:hover{
+  border: 2px solid #ff42a5;
+}
+.type-button-container:hover .button-title{
+  color: #ff42a5;
 }
 .type-button-container .button-image{
-  width: 50px;
+  width: 40px;
 }
-.one{
-  grid-column: 1/2;
+.type-button-container .button-title{
+  font-size: 14px;
+  color: var(--bk-color);
+  font-weight: var(--fw-mdm);
 }
-.two{
-  grid-column: 4/5;
-}
-.three{
-  grid-column: 7/8;
-}
-.four{
-  grid-column: 10/11;
-}
-.five{
-  grid-column: 13/14;
-}
-.six{
-  grid-column: 3/4 ;
-} 
-.seven{grid-column: ;}
-.eight
-.nine
