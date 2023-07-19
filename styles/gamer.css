@@ -25,7 +25,7 @@ img {
   --wh-color: #fff;
   --fw-xl: 700;
   --fw-mdm: 600;
-  --fw-sm:400;
+  --fw-sm: 400;
   --fs-xl: 48px;
   --fs-mdm: 20px;
   --fs-sm: 18px;
@@ -37,19 +37,19 @@ img {
   font-size: var(--fs-xl);
   font-weight: var(--fw-xl);
 }
-.title-gradient-text{
+.title-gradient-text {
   background-image: var(--text-gradient);
   -webkit-background-clip: text;
   color: transparent;
   font-weight: var(--fw-xl);
 }
-.description-text{
+.description-text {
   color: var(--primary-color);
   font-size: var(--fs-sm);
   font-weight: var(--fw-sm);
   margin-bottom: 20px;
 }
-.btn-primary{
+.btn-primary {
   background-image: var(--pink-gradient);
   font-size: var(--fs-mdm);
   color: var(--wh-color);
@@ -71,7 +71,6 @@ img {
   padding-right: 10px;
   width: 80px;
 }
-
 
 /* Common styles ends here*/
 
@@ -156,12 +155,11 @@ img {
   -webkit-background-clip: text;
   color: transparent;
 }
-.banner-text-unit p{
+.banner-text-unit p {
   color: var(--primary-color);
   font-size: var(--fs-mdm);
   margin-bottom: 10px;
   /* margin-left: 20px; */
-  
 }
 .banner-text-unit .fa-solid {
   margin-right: 10px;
@@ -182,8 +180,8 @@ img {
   color: transparent;
   font-size: var(--fs-mdm);
 }
-.banner-text-unit .btn-blue{
-  background-color: #4EC5F7;
+.banner-text-unit .btn-blue {
+  background-color: #4ec5f7;
   font-size: var(--fs-mdm);
   color: var(--wh-color);
   font-weight: var(--fw-mdm);
@@ -194,7 +192,7 @@ img {
   margin-left: 20px;
   cursor: pointer;
   text-transform: uppercase;
-}                           
+}
 .banner-image-container {
   width: 50%;
 }
@@ -204,67 +202,92 @@ img {
 
 /* header area style ends */
 
-
 /* Online games area style */
-.online-games-area{
+.online-games-area {
   max-width: 1200px;
   margin: 50px auto 0;
   text-align: center;
 }
-.card-container{
+.card-container {
   display: flex;
   justify-content: space-between;
   gap: 20px;
 }
-.card-container .card{
- width: 25%;
- text-align: left;
+.card-container .card {
+  width: 25%;
+  text-align: left;
 }
-.card-container .card p{
- color: var(--primary-color);
- font-size: var(--fs-mdm);
- margin-top: 10px;
+.card-container .card p {
+  color: var(--primary-color);
+  font-size: var(--fs-mdm);
+  margin-top: 10px;
+}
+.card-image {
+  position: relative;
 }
 
+.card-overlay {
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  top: 0;
+  background: rgba(0, 0, 0, 0.4);
+  background-size: cover;
+  border-radius: 10px;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  display: none;
+  transition: 1s;
+}
+.card-overlay i {
+  font-size: 45px;
+  color: var(--wh-color);
+}
+.card-image:hover .card-overlay {
+  display: flex;
+}
 
 /* play instantly area style */
-.play-instantly-container{
+.play-instantly-container {
   max-width: 1200px;
   display: flex;
   justify-content: space-between;
   gap: 200px;
   margin: 50px auto 0;
-  
 }
-.instantly-text-container{
+.instantly-text-container {
   display: flex;
   justify-content: end;
   align-items: center;
   width: 50%;
 }
-.play-instantly-text{
+.play-instantly-text {
   max-width: 400px;
   text-align: right;
 }
-.play-instantly-image{
+.play-instantly-image {
   width: 50%;
   position: relative;
   padding-bottom: 100px;
 }
-.child-image{
+.child-image {
   position: absolute;
   width: 45%;
   bottom: 40px;
   left: -100px;
 }
 
-
 /* type button area style */
-.game-type-area{
-  background-image: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+.game-type-area {
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
   padding: 50px;
 }
-.game-type-container{
+.game-type-container {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
@@ -273,43 +296,43 @@ img {
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: repeat(2, ifs);
 }
-.one{
+.one {
   grid-column: 1/4;
   grid-row: 1/2;
 }
-.two{
+.two {
   grid-column: 5/8;
   grid-row: 1/2;
 }
-.three{
+.three {
   grid-column: 9/12;
   grid-row: 1/2;
 }
-.four{
+.four {
   grid-column: 13/16;
   grid-row: 1/2;
 }
-.five{
+.five {
   grid-column: 17/20;
   grid-row: 1/2;
 }
-.six{
+.six {
   grid-column: 2/6;
-  grid-row: 2/3
-} 
-.seven{
+  grid-row: 2/3;
+}
+.seven {
   grid-column: 7/10;
-  grid-row: 2/3
+  grid-row: 2/3;
 }
-.eight{
+.eight {
   grid-column: 11/14;
-  grid-row: 2/3
+  grid-row: 2/3;
 }
-.nine{
+.nine {
   grid-column: 15/18;
-  grid-row: 2/3
+  grid-row: 2/3;
 }
-.type-button-container{
+.type-button-container {
   display: flex;
   justify-content: start;
   gap: 5px;
@@ -317,26 +340,26 @@ img {
   padding: 10px;
   border-radius: 80px;
   border: 2px solid transparent;
+  transition: 0.3s;
 }
-.type-button-container:hover{
+.type-button-container:hover {
   border: 2px solid #ff42a5;
 }
-.type-button-container:hover .button-title{
+.type-button-container:hover .button-title {
   color: #ff42a5;
+  transition: 0.3s;
 }
-.type-button-container .button-image{
+.type-button-container .button-image {
   width: 40px;
 }
-.type-button-container .button-title{
+.type-button-container .button-title {
   font-size: 14px;
   color: var(--bk-color);
   font-weight: var(--fw-mdm);
 }
 
-
-
 /* footer area style */
-.footer-area{
+.footer-area {
   background-color: var(--bk-color);
   display: flex;
   justify-content: center;
@@ -344,52 +367,67 @@ img {
   align-items: center;
   padding: 100px 0;
 }
-.footer-area-container{
+.footer-area-container {
   text-align: center;
   width: 50%;
   margin: 0 auto;
 }
-.footer-area .footer-logo{
+.footer-area .footer-logo {
   max-width: 30%;
   margin: 20px auto;
 }
-.footer-logo-text{
+.footer-logo-text {
   color: var(--wh-color);
   font-size: 42px;
   font-weight: var(--fw-xl);
 }
-.link-container{
+.link-container {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
 }
-.link-container a{
+.link-container a {
   text-decoration: none;
   color: var(--wh-color);
   font-size: var(--fs-sm);
   font-weight: var(--fw-mdm);
 }
-.footer-social-container{
+.footer-social-container {
   width: 60%;
   margin: 0 auto 20px;
   display: flex;
   justify-content: space-around;
 }
-.footer-social-container .fa-brands{
+.footer-social-container .fa-brands {
   font-size: 25px;
   color: var(--wh-color);
 }
-.footer-social-container .fa-facebook{
-  background-color: blue;
-  -webkit-background-clip: ;
+.facebook .fa-facebook {
+  position: relative;
 }
-.policy-container{
+.youtube .fa-youtube {
+  position: relative;
+}
+.youtube .fa-circle {
+  position: absolute;
+  color: red;
+  font-size: 18px;
+  margin: 3px 2px;
+}
+
+.facebook .fa-circle {
+  position: absolute;
+  color: blue;
+  font-size: 25px;
+}
+.policy-container {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 20px;
 }
-.policy-container a, .copyright-text{
+.policy-container a,
+.copyright-text {
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
 }
