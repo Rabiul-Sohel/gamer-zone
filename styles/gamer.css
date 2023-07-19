@@ -61,6 +61,16 @@ img {
   cursor: pointer;
   text-transform: uppercase;
 }
+.logo-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+}
+
+.logo-image {
+  padding-right: 10px;
+  width: 80px;
+}
 
 
 /* Common styles ends here*/
@@ -79,16 +89,8 @@ img {
   padding: 40px 0;
   align-items: center;
 }
-.logo-container {
-  display: flex;
-  width: 50%;
-  align-items: center;
-}
-.logo-image {
-  padding-right: 20px;
-  width: 80px;
-}
-.logo-container h3 {
+
+.logo-container .logo-text {
   font-size: 42px;
   color: var(--bk-color);
 }
@@ -252,7 +254,7 @@ img {
 .child-image{
   position: absolute;
   width: 45%;
-  bottom: 30px;
+  bottom: 40px;
   left: -100px;
 }
 
@@ -329,4 +331,65 @@ img {
   font-size: 14px;
   color: var(--bk-color);
   font-weight: var(--fw-mdm);
+}
+
+
+
+/* footer area style */
+.footer-area{
+  background-color: var(--bk-color);
+  display: flex;
+  justify-content: center;
+  /* min-height: 50vh; */
+  align-items: center;
+  padding: 100px 0;
+}
+.footer-area-container{
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+.footer-area .footer-logo{
+  max-width: 30%;
+  margin: 20px auto;
+}
+.footer-logo-text{
+  color: var(--wh-color);
+  font-size: 42px;
+  font-weight: var(--fw-xl);
+}
+.link-container{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.link-container a{
+  text-decoration: none;
+  color: var(--wh-color);
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-mdm);
+}
+.footer-social-container{
+  width: 60%;
+  margin: 0 auto 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-social-container .fa-brands{
+  font-size: 25px;
+  color: var(--wh-color);
+}
+.footer-social-container .fa-facebook{
+  background-color: blue;
+  -webkit-background-clip: ;
+}
+.policy-container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+.policy-container a, .copyright-text{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.60);
+  font-size: 16px;
 }
