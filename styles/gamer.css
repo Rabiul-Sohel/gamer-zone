@@ -154,6 +154,7 @@ img {
   font-weight: 800;
   -webkit-background-clip: text;
   color: transparent;
+  margin-bottom: 20px;
 }
 .banner-text-unit p {
   color: var(--primary-color);
@@ -239,6 +240,7 @@ img {
   flex-direction: column;
   display: none;
   transition: 1s;
+  border: 3px solid #ff42a5;
 }
 .card-overlay i {
   font-size: 45px;
