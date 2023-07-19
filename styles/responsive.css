@@ -1,6 +1,6 @@
 /* for mobile */
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 576px) {
   /* common responsive */
   .title-bk-text {
     font-size: 30px;
@@ -17,11 +17,11 @@
     gap: 40px;
   }
   .nav-container,
-  .nav-,
   .banner-text-container,
   .card-container .card,
   .instantly-text-container,
-  .play-instantly-text{
+  .play-instantly-text,
+  .footer-area-container{
     width: 90%;
     margin: auto;
     text-align: center;
@@ -70,7 +70,7 @@
   }
 
 
-  /* online game responsive */
+  
   
   .play-instantly-image{
     width: 70%;
@@ -81,5 +81,75 @@
   bottom: 40px;
   left: -50px;
 }
+.game-type-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.link-container, .footer-social-container, .policy-container{
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 50px;
+  width: 80%;
+  margin: 0 auto 50px;
+}
+.footer-area-container .footer-logo{
+  max-width: 100%;
+  text-align: center;
+}
+.link-container a {
+  font-size: 14px;
+}
 
+}
+
+
+
+/* tablet device responsive */
+
+
+@media screen and (min-width: 576px) and (max-width: 768px) {
+
+  .nav-logo-container,
+  .banner-area-container,
+  .play-instantly-container{
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .nav-container,
+  .logo-container,
+  .banner-text-container,
+  .banner-image-container,
+  .instantly-text-container
+  {
+    width: 100%;
+    justify-content: center;
+  }
+  .card-container
+  {
+    gap: 5px;
+    width: 95%;
+    margin: auto;
+  }
+  .play-instantly-text{
+    text-align: center;
+  }
+  .play-instantly-image{
+    width: 70%;
+    margin: auto;
+  }
+  .game-type-container,
+  .link-container,
+  .footer-social-container,.policy-container{
+    justify-content: center;
+    gap: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+  
+
+
+  
 }

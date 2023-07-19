@@ -301,10 +301,9 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  /* gap: 10px; */
   justify-content: space-between;
   grid-template-columns: repeat(14, 1fr);
-  grid-template-rows: repeat(2, ifs);
+  grid-template-rows: repeat(2, 1fr);
 }
 .one {
   grid-column: 1/4;
@@ -373,7 +372,6 @@ img {
   background-color: var(--bk-color);
   display: flex;
   justify-content: center;
-  /* min-height: 50vh; */
   align-items: center;
   padding: 100px 0;
 }
@@ -383,8 +381,10 @@ img {
   margin: 0 auto;
 }
 .footer-area .footer-logo {
-  max-width: 30%;
   margin: 20px auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
 }
 .footer-logo-text {
   color: var(--wh-color);
