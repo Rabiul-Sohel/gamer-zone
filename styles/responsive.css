@@ -85,6 +85,24 @@
   display: flex;
   flex-wrap: wrap;
 }
+.game-type-container{
+  width: 100%;
+}
+.type-button-container {
+  justify-content: centre;
+  gap: 5px;
+  align-items: start;
+  padding: 2px;
+  border-radius: 80px;
+  border: 2px solid transparent;
+}
+
+.type-button-container .button-title{
+  font-size: 10px;
+}
+.type-button-container .button-image{
+  width: 10px;
+}
 .link-container, .footer-social-container, .policy-container{
   flex-wrap: wrap;
   justify-content: center;
