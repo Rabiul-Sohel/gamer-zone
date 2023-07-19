@@ -1,0 +1,60 @@
+/* for mobile */
+
+@media screen and (max-width: 426px) {
+  /* common responsive */
+  .title-bk-text {
+    font-size: 25px;
+  }
+  .nav-logo-container,
+  .nav-container,
+  .banner-area-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .nav-container,
+  .nav-,
+  .banner-text-container {
+    width: 100%;
+  }
+.btn-primary,
+.banner-text-unit .btn-blue
+ {
+  font-size: 16px;
+  padding: 10px;
+}
+
+  /* banner area responsive */
+  .banner-area {
+    background-image: none;
+  }
+  .banner-text-container {
+    order: 2;
+    width: 100%;
+    margin: 0 auto;
+    background-image: url("../images/Group\ 14.png");
+    background-repeat: no-repeat;
+    background-size: 90% 100%;
+    background-position: center;
+  }
+  .banner-text-unit {
+    width: 70%;
+    margin: 20px auto 0;
+    text-align: center;
+    padding-top: 50px;
+  }
+  .banner-heading {
+    font-size: 45px;
+  }
+  .banner-p-text{
+    margin-left: 50px;
+    text-align: left;
+  }
+  .banner-text-unit p {
+    font-size: 14px;
+  }
+  .banner-image-container {
+    order: 1;
+    width: 70%;
+    margin: auto;
+  }
+}

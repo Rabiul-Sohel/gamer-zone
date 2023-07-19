@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/gamer.css">
+    <link rel="stylesheet" href="styles/responsive.css">
 
 </head>
 
@@ -47,9 +48,11 @@
           <div class="banner-text-unit">
             <h1 class="title-bk-text" style="text-transform: uppercase;">Play Like The</h1>
             <h2 class="banner-heading">G.O.A.T.</h2>
-            <p><i class="fa-solid fa-play"></i> 1-Click instant play</p>
-            <p><i class="fa-solid fa-download"></i> No Download</p>
-            <p><i class="fa-solid fa-user-group"></i></i> 11000s of supported online games</p>
+            <div class="banner-p-text">
+              <p><i class="fa-solid fa-play"></i> 1-Click instant play</p>
+              <p><i class="fa-solid fa-download"></i> No Download</p>
+              <p><i class="fa-solid fa-user-group"></i></i> 11000s of supported online games</p>
+            </div>
             <button class="btn-primary">Sign in</button>
             <button class="btn-blue">Go Rogue</button>
           </div>
@@ -66,7 +69,7 @@
   <!-- main area starts here -->
   <main>
     <!-- online games section -->
-    <section class="online-games-area">
+    <section class="online-games-area hide">
       <h3 class="title-bk-text">Online Games <span class="title-gradient-text">Funny Videos</span></h3>
       <p class="description-text">A Collection of Hilarious Videos to Brighten Your Day</p>
       <div class="card-container">
@@ -114,7 +117,7 @@
     </section> 
 
     <!-- Play instantly area -->
-    <section class="play-instantly-container">
+    <section class="play-instantly-container hide">
       <div class="instantly-text-container">
         <div class="play-instantly-text">
           <h3 class="title-bk-text"> <span class="title-gradient-text">Play Instantly,</span><br>
@@ -131,7 +134,7 @@
     </section>
 
     <!-- game type area -->
-      <div class="game-type-area">
+      <div class="game-type-area hide">
         <section class="game-type-container">
           <div class="type-button-container one">
             <img src="images/Rectangle 11.png" alt="" class="button-image">
@@ -175,7 +178,7 @@
   <!-- main area ends here -->
 
   <!-- footer area starts here -->
-  <footer class="footer-area">
+  <footer class="footer-area hide">
    <div class="footer-area-container">
     <div class="logo-container footer-logo">
       <img class="logo-image" src="images/Frame.png" alt="">
