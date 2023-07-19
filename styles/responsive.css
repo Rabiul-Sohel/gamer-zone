@@ -107,6 +107,10 @@
   width: 80%;
   margin: 0 auto 50px;
 }
+.footer-social-container{
+  width: 40%;
+  gap: 30px;
+}
 .footer-area-container .footer-logo{
   max-width: 100%;
   text-align: center;
