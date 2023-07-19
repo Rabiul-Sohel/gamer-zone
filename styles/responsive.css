@@ -3,18 +3,28 @@
 @media screen and (max-width: 426px) {
   /* common responsive */
   .title-bk-text {
-    font-size: 25px;
+    font-size: 30px;
   }
+  .description-text{
+    font-size: 12px;
+  } 
   .nav-logo-container,
   .nav-container,
-  .banner-area-container {
+  .banner-area-container,
+  .card-container,
+  .play-instantly-container  {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
   }
   .nav-container,
   .nav-,
-  .banner-text-container {
-    width: 100%;
+  .banner-text-container,
+  .card-container .card,
+  .instantly-text-container,
+  .play-instantly-text{
+    width: 90%;
+    margin: auto;
+    text-align: center;
   }
 .btn-primary,
 .banner-text-unit .btn-blue
@@ -33,17 +43,18 @@
     margin: 0 auto;
     background-image: url("../images/Group\ 14.png");
     background-repeat: no-repeat;
-    background-size: 90% 100%;
+    background-size: 100% 100%;
     background-position: center;
   }
   .banner-text-unit {
     width: 70%;
     margin: 20px auto 0;
     text-align: center;
-    padding-top: 50px;
+    padding: 50px 0;
   }
   .banner-heading {
     font-size: 45px;
+    margin-bottom: 10px;
   }
   .banner-p-text{
     margin-left: 50px;
@@ -54,7 +65,21 @@
   }
   .banner-image-container {
     order: 1;
+    width: 90%;
+    margin: auto;
+  }
+
+
+  /* online game responsive */
+  
+  .play-instantly-image{
     width: 70%;
     margin: auto;
   }
+  .child-image {
+  
+  bottom: 40px;
+  left: -50px;
+}
+
 }
