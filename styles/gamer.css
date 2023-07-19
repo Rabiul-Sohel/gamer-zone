@@ -234,16 +234,26 @@ img {
   background: rgba(0, 0, 0, 0.4);
   background-size: cover;
   border-radius: 10px;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   display: none;
   transition: 1s;
 }
 .card-overlay i {
   font-size: 45px;
   color: var(--wh-color);
+  margin-bottom: 10px;
 }
+.card-overlay .overlay-text {
+  font-size: var(--fs-mdm);
+  background-image: var(--pink-gradient);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 10px;
+  font-weight: var(--fw-mdm);
+}
+
 .card-image:hover .card-overlay {
   display: flex;
 }
